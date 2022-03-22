@@ -1,0 +1,74 @@
+*{box-sizing: border-box;}
+.container{
+    max-width: 1160px;margin: auto;
+}
+.hero-img{
+    background:  url(../img/hero-img.png)no-repeat top;
+    background-size: 100%; position: relative;
+
+    .header{
+        background: linear-gradient(rgba(5,47,28,1), rgba(5,47,28,.7),  rgba(0,0,0,.1));
+        .navbar{
+            .collapse{
+                width: 40px;height: 40px;background-color:#F57629 ;
+                .fa-solid{color: #fff;}
+            }
+        }
+    }
+}
+
+
+.whats-new{
+    .main{
+        .card{
+            &:hover{
+                img{box-shadow: -10px 10px 0px orange;}
+            }
+        }
+    }
+}
+
+.nutrition{
+    background:  url(../img/bg.png)no-repeat top;
+    background-size: 100%;
+    padding: 90px 0;
+}
+.growth{
+    background-color: #FAFAFA;padding: 50px  0 0;
+    .sec-2{
+        img{width: 10%;}
+    }
+}
+
+.award{
+    .sec2{
+        .side-content{width: 350px;background-color:#FFB016;}
+    }
+}
+
+.product{
+    background-color: #fff; padding: 100px 50px;
+    border-radius: 0 0 150px 0;
+}
+
+.info{
+    .overlay{
+        .box{
+            background-color: rgba(0,0,0,.5);
+            width: 63%;padding: 100px 50px;
+        }
+    }
+}
+
+.footer{
+    background-color: #FFB016;
+    .form{
+        input{
+            background-color: rgba(255,255,255,.3);
+            &::placeholder{color: #fff;}
+        }
+    }
+}
+
+
+
