@@ -8,25 +8,9 @@
   margin: auto;
 }
 
-.hero-img {
-  background: url(../img/hero-img.png) no-repeat top;
-  background-size: 100%;
-  position: relative;
-}
-
 .hero-img .header {
   background: -webkit-gradient(linear, left top, left bottom, from(#052f1c), color-stop(rgba(5, 47, 28, 0.7)), to(rgba(0, 0, 0, 0.1)));
   background: linear-gradient(#052f1c, rgba(5, 47, 28, 0.7), rgba(0, 0, 0, 0.1));
-}
-
-.hero-img .header .navbar .collapse {
-  width: 40px;
-  height: 40px;
-  background-color: #F57629;
-}
-
-.hero-img .header .navbar .collapse .fa-solid {
-  color: #fff;
 }
 
 .whats-new .main .card:hover img {
@@ -50,7 +34,6 @@
 }
 
 .award .sec2 .side-content {
-  width: 350px;
   background-color: #FFB016;
 }
 
@@ -62,8 +45,6 @@
 
 .info .overlay .box {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 63%;
-  padding: 100px 50px;
 }
 
 .footer {

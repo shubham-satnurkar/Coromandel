@@ -14,19 +14,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="overflow-x-hidden w-full">
     <!-- Hero Image and Header Section Start -->
-    <section class="hero-img overflow-hidden ">
+    <section class="hero-img overflow-hidden relative w-full">
+        <img src="img/hero-img.png" alt="hero-img" class="absolute top-0 left-0 w-full">
         <!-- header Navigation bar and nav menu start... -->
-        <header class="header w-full py-7 mb-28">
-            <div class="xl:container lg:container  relative lg:px-0 px-4 mx-auto">
-                <div class="share flex text-white space-x-2 absolute lg:top-1 lg:left-4 top-5 right-20 font-bold">
+        <header class="header lg:py-7 w-full py-4 z-30  fixed top-0 left-0">
+            <div class="xl:container lg:container container relative lg:px-0 px-4 mx-auto">
+                <div class="share sm:flex hidden text-white space-x-2 absolute lg:top-1 lg:left-4 top-5 right-20 font-bold">
                     <h6>Share Price : 750 </h6>
                     <img src="img/triangle.svg" alt="trianle">
                     <h6> +3</h6>
                 </div>
+
                 <nav class="navbar flex text-white justify-between items-center">
-                    <ul id="nav" class="nav  self-end  text-base font-sans lg:flex hidden lg:order-1 lg:relative lg:top-0 lg:right-0 absolute top-16 right-0">
+                    <ul id="nav" class="nav  self-end  text-base font-sans lg:flex lg:text-white hidden lg:order-1 lg:relative lg:top-0 lg:-right-0
+                     fixed z-50 top-20 -right-60 w-0 lg:w-auto   lg:bg-transparent bg-white lg:h-auto h-screen text-white lg:space-y-0 space-y-6 lg:p-0 
+                    p-4
+                     "
+                     >
                         <li class="nav-item"><a href="javascript:void(0)" class="p-4">About Us</a></li>
                         <li class="nav-item"><a href="javascript:void(0)" class="p-4">Our Businesses</a></li>
                         <li class="nav-item"><a href="javascript:void(0)" class="p-4">Investor Relations</a></li>
@@ -39,11 +45,11 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="collapse text-lg rounded-md lg:hidden order-2 lg:order-3" id="navbar-toogle">
+                    <button class="collapse bg-orange-500 sm:text-lg text-sm rounded-md lg:hidden order-2 lg:order-3 w-7 h-7 sm:w-10 sm:h-10" id="navbar-toogle">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                     <a href="javascript:void(0)" class="logo w-1/4 text-right order-1 lg:order-2">
-                        <img src="img/logo.png" alt="logo" class="lg:w-4/5 ml-auto">
+                        <img src="img/logo.png" alt="logo" class="w-full lg:w-4/5 lg:ml-auto">
                     </a>
                 </nav>
             </div>
@@ -51,22 +57,28 @@
         <!-- header Navigation bar and nav menu end... -->
 
         <!-- hero Image heading and content start-->
-        <div class="heading-sec relative py-20 ">
-            <div class="container ">
-                <div class="pl-40 text-white w-3/5 pr-16  mb-10">
-                    <h1 class="text-7xl font-light mb-8">Our Farmer’s
-                        <span class="font-bold text-7xl">First Approach</span>
+        <div class="heading-sec w-full relative ">
+            <div class="xl:container lg:container container   mx-auto p-4">
+                <div class="xl:pl-20 lg:pl-16 md:pl-0 pt-16 pb-2 w-full sm:pt-24 sm:pb-4 sm:w-2/4  md:pt-28 md:pb-6 md:w-3/6  
+                lg:pt-40 lg:pb-6 xl:pt-64 xl:pb-10 xl:w-2/4 text-white lg:w-3/5  lg:mb-10 " 
+                >
+                    <h1 class="lg:text-6xl xl:text-7xl md:text-5xl sm:text-4xl text-xl font-light sm:mb-8  mb-4">Our Farmer’s
+                        <span class="font-bold  lg:text-6xl xl:text-7xl md:text-5xl">First Approach</span>
                     </h1>
                     <a href="javascript:void(0)"
-                        class="py-2 text-xl font-bold uppercase px-10 rounded-full bg-gradient-to-tr from-orange-600 to-yellow-500">
+                        class="sm:py-2 py-1 px-3 text-xs  sm:px-5 sm:text-sm lg:text-xl  font-bold uppercase lg:px-10 md:px-6 rounded-full 
+                        bg-gradient-to-tr from-orange-600 to-yellow-500"
+                    >
                         Know More
                     </a>
                 </div>
 
-                <div class="turnover text-white uppercase  flex flex-col justify-end items-end pr-16 mb-12">
-                    <h5 class="text-lg font-semibold">TURNOVER</h5>
-                    <h2 class="text-6xl font-black">3224</h2>
-                    <p class="font-semibold text-sm flex  items-center justify-between  w-40">
+                <div class="turnover text-white uppercase  flex flex-col justify-end items-end 
+                lg:pr-8 lg:pb-20  xl:pr-12 xl:pb-32 mb-8 md:pb-12 sm:pb-10 pb-5
+                ">
+                    <h5 class="md:text-lg sm:text-sm text-xs font-semibold">TURNOVER</h5>
+                    <h2 class="xl:text-6xl lg:text-5xl md:text-5xl sm:text-4xl text-2xl font-black">3224</h2>
+                    <p class="font-semibold md:text-sm sm:text-xs text-xs flex  items-center justify-between w-24 xl:w-40 lg:w-36 md:w-32 sm:w-28">
                         <span class="ml-5">QTR 1</span>
                         <span class="">CRORE</span>
                     </p>
@@ -74,22 +86,22 @@
             </div>
         </div>
         <!-- hero Image heading and content end-->
-        <img src="img/texture.png" alt="texture" class="absolute -bottom-6 w-full">
+        <img src="img/texture.png" alt="texture" class="absolute bottom-0 xl:bottom-8 lg:bottom-0 md:bottom-0 sm:bottom-0 left-0 w-full">
     </section>
     <!-- Hero Image and Header Section End -->
 
     <!-- What's New Section Start -->
     <section class="whats-new bg-gray-100 py-12">
-        <div class="container">
-            <div class="row flex">
-                <aside class="side w-1/5">
+        <div class="container p-4">
+            <div class="row flex sm:flex-nowrap flex-wrap">
+                <aside class="side md:w-1/5 sm:w-1/2 w-full mb-4">
                     <img src="img/logo-icon.svg" alt="logo-icon">
-                    <h2 class="text-5xl text-gray-500 my-5">What’s New?</h2>
-                    <a href="javascript:void(0)" class="text-xl uppercase text-orange-500 font-bold">Know More</a>
+                    <h2 class="sm:text-5xl text-3xl text-gray-500 sm:my-5 my-3">What’s New?</h2>
+                    <a href="javascript:void(0)" class="sm:text-xl text-base uppercase text-orange-500 font-bold">Know More</a>
                 </aside>
-                <main class="main w-4/5">
-                    <div class="row flex flex-wrap gap-4 p-4">
-                        <div class="col w-80">
+                <main class="main md:w-4/5 sm:w-1/2 w-full">
+                    <div class="row flex flex-wrap gap-4 ">
+                        <div class="col xl:w-80 lg:w-60 md:w-64 sm:w-full ">
                             <div class="card">
                                 <img src="img/img-1.png" alt="" class="w-full">
                                 <div class="card-body p-3">
@@ -103,7 +115,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col w-80">
+                        <div class="col xl:w-80 lg:w-60 md:w-64 sm:w-full ">
                             <div class="card">
                                 <img src="img/img-2.png" alt="" class="w-full">
                                 <div class="card-body p-3">
@@ -117,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col w-80">
+                        <div class="col xl:w-80 lg:w-60 md:w-64 sm:w-full ">
                             <div class="card">
                                 <img src="img/img-3.png" alt="" class="w-full">
                                 <div class="card-body p-3">
@@ -132,7 +144,7 @@
                             </div>
                         </div>
 
-                        <div class="col w-80">
+                        <div class="col xl:w-80 lg:w-60 md:w-64 sm:w-full ">
                             <div class="card">
                                 <img src="img/img-4.png" alt="" class="w-full">
                                 <div class="card-body p-3">
@@ -146,7 +158,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col w-80">
+                        <div class="col xl:w-80 lg:w-60 md:w-64 sm:w-full ">
                             <div class="card">
                                 <img src="img/img-3.png" alt="" class="w-full">
                                 <div class="card-body p-3">
@@ -160,7 +172,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col w-80">
+                        <div class="col xl:w-80 lg:w-60 md:w-64 sm:w-full ">
                             <div class="card">
                                 <img src="img/img-2.png" alt="" class="w-full">
                                 <div class="card-body p-3">
@@ -182,21 +194,22 @@
     <!-- What's New Section End -->
 
     <!-- Plant Nutrition Section Start -->
-    <section class="nutrition">
-        <div class="container">
+    <section class="nutrition relative pt-7 sm:pt-20 md:pb-32 md:pt-24  lg:py-28 overflow-hidden">
+        <img src="img/bg.png" alt="background" class="absolute top-0 left-0">
+        <div class="xl:container lg:container container px-4 relative z-10">
             <div class="row flex justify-center items-center">
-                <div class="col w-1/2 pt-20">
-                    <img src="img/farmer.png" alt="farmer" class="w-11/12 ">
+                <div class="col md:w-5/12  lg:w-1/2 lg:pt-16 sm:block sm:w-6/12 hidden">
+                    <img src="img/farmer.png" alt="farmer" class="xl:w-11/12 md:w-11/12 lg:w-10/12 xl:mt-6">
                 </div>
-                <div class="col w-1/3 text-white">
-                    <h4 class="text-4xl mb-3">Provider Of Complete</h4>
-                    <h3 class="text-6xl">Plant Nutrition Solution</h3>
-                    <p class="my-6 text-base">
+                <div class="col w-full sm:w-8/12 md:w-7/12 lg:w-1/2 xl:w-1/3 text-white">
+                    <h4 class="text-lg sm:text-2xl md:text-3xl lg:text-4xl lg:mb-3">Provider Of Complete</h4>
+                    <h3 class="text-xl sm:text-3xl md:text-4xl lg:text-6xl">Plant Nutrition Solution</h3>
+                    <p class="my-2 sm:my-3 lg:my-6 md:text-base text-sm ">
                         Coromandel International Limited, India’s second largest Phosphatic fertilizer player, is in the business segments of Fertilizers, Specialty Nutrients, Crop Protection and Retail.
                         The Company manufactures a wide range of fertilizers and markets around 4.5 million tons making it a leader in its addressable markets.
                     </p>
                     <a href="javascript:void(0)"
-                        class="py-2 text-lg font-bold uppercase px-8 rounded-full bg-gradient-to-tr from-orange-600 to-yellow-500	">
+                        class="md:py-2 py-1 px-3 sm:py-1 sm:px-4 text-sm md:px-6 md:text-sm lg:text-lg font-bold uppercase lg:px-8 rounded-full bg-gradient-to-tr from-orange-600 to-yellow-500	">
                         Know More
                     </a>
                 </div>
@@ -207,63 +220,66 @@
 
     <!-- Growth Journey Section Start -->
     <section class="growth">
-        <div class="container">
-            <div class="row flex justify-center">
-                <div class="sec-1 w-1/3 ">
+        <div class="container px-4">
+            <div class="row flex lg:justify-center justify-between">
+                <div class="sec-1 sm:w-1/2 lg:w-1/3 ">
                     <h4 class="text-4xl uppercase text-gray-600 mb-5" >GROWTH JOURNEY</h4>
                     <p class="text-gray-600 text-base leading-8">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
                     </p>
                 </div>
-                <div class="sec-2 w-2/4 flex justify-center  gap-10">
-                    <img src="img/plant-root.png" alt="plant-root" >
-                    <img src="img/dots.png" alt="dots" >
+                <div class="sec-2 hidden sm:w-1/2 lg:w-2/4 sm:flex justify-center  gap-10">
+                    <img src="img/plant-root.png" alt="plant-root" class="w-full block">
+                    <img src="img/dots.png" alt="dots" class="w-full block">
                 </div>
             </div>
         </div>
-        <img src="img/Layer.png" alt="" class="w-full">
+        <img src="img/Layer.png" alt="layer" class="w-full ">
     </section>
     <!-- Growth Journey Section End -->
 
     <!-- Award & Recognitions Section start -->
     <section class="award w-full">
-        <div class="row flex">
-            <div class="sec1 w-4/5 relative">
+        <div class="row flex justify-between  md:flex-nowrap flex-wrap">
+            <div class="sec1 w-full md:w-4/5 relative">
                 <img src="img/award-bg.png" class="relative" alt="award-bg">
-                <div class="top-content absolute -top-32 z-10 bg-white w-3/5 p-10 flex justify-between">
-                    <div class="col w-2/5 relative">
-                        <h4 class="text-4xl text-gray-600 mb-10">Award & Recognitions</h4>
-                        <a href="javascript:void(0)" class="py-2 text-lg uppercase px-8 rounded-full border-2 border-solid border-orange-500 text-orange-500  font-bold  hover:bg-gradient-to-tr from-orange-600 to-yellow-500 hover:text-white">
+
+                <div class="top-content absolute -top-10 w-full py-2 px-4  sm:-top-16 md:-top-24 xl:-top-32 z-10 bg-white md:w-2/3 lg:w-3/5 xl:w-3/5 sm:p-6 xl:p-10 flex items-center justify-between">
+                    <div class="col sm:w-2/5 w-3/5 relative">
+                        <h4 class="text-xl mb-4 xl:text-4xl sm:text-2xl text-gray-600 xl:mb-10 sm:mb-5">Award & Recognitions</h4>
+                        <a href="javascript:void(0)" class="sm:py-2 py-1 text-xs px-4 xl:text-lg sm:text-sm sm:px-5 uppercase xl:px-8 rounded-full border-2 border-solid border-orange-500 text-orange-500  font-bold  hover:bg-gradient-to-tr from-orange-600 to-yellow-500 hover:text-white">
                             Know More
                         </a>
                     </div>
-                    <img src="img/arrow.svg" alt="arrow">
-                    <img src="img/trophy.svg" alt="trophy">
+                    <img src="img/arrow.svg" alt="arrow" class="h-24 md:h-32">
+                    <img src="img/trophy.svg" alt="trophy" class="w-1/12 sm:w-1/12 md:2/12 mr-12 sm:mr-8">
 
                     <div class="logo absolute top-0 right-0">
-                        <img src="img/logo-icon.svg" alt="logo-icon">
+                        <img src="img/logo-icon.svg" alt="logo-icon" class="w-2/3 xs:w-full">
                     </div>
                 </div>
 
-                <div class="content w-2/5 absolute text-white z-10 top-1/2 left-24">
+                <div class="content lg:w-2/5 absolute text-white z-10 top-20 sm:top-36 md:top-36 xl:top-1/2 sm:left-20 lg:left-24 left-4">
                     <hr class="w-2/12 h-1 border-0 bg-gradient-to-tr from-orange-600 to-yellow-500">
-                    <h3 class="text-6xl font-bold ">Crop Protection</h3>
-                    <h5 class="text-xl font-bold my-4">
+                    <h3 class="text-2xl sm:text-5xl md:text-6xl font-bold ">Crop Protection</h3>
+                    <h5 class="text-sm sm:text-lg md:text-xl font-bold sm:my-4 my-2">
                         Insecticides | Fungicides | Herbicides
                     </h5>
                     <a href="javascript:void(0)"
-                        class="py-2 text-lg uppercase px-8 rounded-full  font-bold bg-gradient-to-tr from-orange-600 to-yellow-500	">
+                        class="sm:py-2 py-1 px-4 text-xs sm:text-sm sm:px-5 md:text-lg uppercase md:px-8 rounded-full  font-bold bg-gradient-to-tr from-orange-600 to-yellow-500">
                         Know More
                     </a>
                 </div>
             </div>
-            <div class="sec2 w-1/5 relative">
-                <div class="side-content absolute top-0 right-0  text-white text-center p-10">
-                    <h2 class="text-7xl mb-4 font-bold">02<sup>nd</sup></h2>
-                    <h4 class="text-left font-semibold">Largest phosphatic fertiliser player in India</h4>
+
+
+            <div class="sec2 w-full md:w-1/5 lg:w-1/5 relative">
+                <div class="side-content absolute z-20 w-40 p-4 -top-20 md:top-0 right-0  sm:right-0 sm:w-48 md:w-56 sm:p-5 lg:w-96 text-white text-center md:p-4 lg:p-6 xl:p-10">
+                    <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-7xl lg:mb-4 sm:mb-3 font-bold">02<sup>nd</sup></h2>
+                    <h4 class="text-xs md:text-base sm:text-sm font-semibold">Largest phosphatic fertiliser player in India</h4>
                 </div>
-                <div class="absolute bottom-10 ">
-                    <img src="img/gromor-img.png" alt="gromor-img" class=" w-3/4 mx-auto">
+                <div class="absolute md:block hidden  right-32 md:right-0 bottom-10 text-center z-10">
+                    <img src="img/gromor-img.png" alt="gromor-img" class=" w-full mx-auto">
                 </div>
             </div>
         </div>
@@ -271,25 +287,25 @@
     <!-- Award & Recognitions Section end -->
 
     <!-- Product Section Start -->
-    <section class="product relative z-30">
-        <div class="container">
-            <div class="row flex space-x-4">
-                <div class="col w-1/6">
+    <section class="product relative z-10">
+        <div class="container px-4">
+            <div class="row flex flex-wrap lg:flex-nowrap space-x-4 justify-center">
+                <div class="col lg:w-1/6 sm:w-5/12 w-3/4 md:w-1/4 ">
                     <img src="img/pro-img-1.png" alt="pro-img-1" class="w-full">
                 </div>
-                <div class="col w-1/6">
+                <div class="col lg:w-1/6 sm:w-5/12 w-3/4 md:w-1/4 ">
                     <img src="img/pro-img-2.png" alt="pro-img-2" class="w-full">
                 </div>
-                <div class="col w-1/6">
+                <div class="col lg:w-1/6 sm:w-5/12 w-3/4 md:w-1/4 ">
                     <img src="img/pro-img-3.png" alt="pro-img-3" class="w-full">
                 </div>
-                <div class="col w-1/6">
+                <div class="col lg:w-1/6 sm:w-5/12 w-3/4 md:w-1/4 ">
                     <img src="img/pro-img-4.png" alt="pro-img-4" class="w-full">
                 </div>
-                <div class="col w-1/6">
+                <div class="col lg:w-1/6 sm:w-5/12 w-3/4 md:w-1/4 ">
                     <img src="img/pro-img-5.png" alt="pro-img-5" class="w-full">
                 </div>
-                <div class="col w-1/6">
+                <div class="col lg:w-1/6 sm:w-5/12 w-3/4 md:w-1/4 ">
                     <img src="img/pro-img-6.png" alt="pro-img-6" class="w-full">
                 </div>
             </div>
@@ -298,18 +314,18 @@
     <!-- Product Section End -->
 
     <!-- Information Section Start -->
-    <section class="info -mt-32 relative w-full">
+    <section class="info sm:-mt-12 md:-mt-16 lg:-mt-20 xl:-mt-32 relative w-full overflow-hidden">
         <img src="img/info-bg.png" alt="info-bg" class="w-full ">
-        <div class="overlay absolute top-32 z-10">
-            <div class="box  p-5 mx-auto text-white flex">
-                <div class="flex flex-col gap-4">
-                    <h4 class="text-3xl font-bold">Mr. M. M. Murugappan</h4>
-                    <h6 class="text-lg font-bold">Chairman</h6>
-                    <p class="text-base leading-7">
+        <div class="overlay absolute top-4 sm:top-12 md:top-20 lg:top-24 xl:top-32 z-10">
+            <div class="box w-11/12 sm:w-4/5 md:w-8/12 lg:w-2/3  xl:w-3/5 sm:py-8 py-6 px-6 sm:px-6 md:py-10 md:px-8 lg:py-12 lg:px-8 xl:py-24 xl:px-14 mx-auto text-white flex">
+                <div class="w-3/4 sm:w-4/5 md:w-3/5 flex flex-col gap-4">
+                    <h4 class="sm:text-2xl lg:text-3xl md:text-2xl font-bold">Mr. M. M. Murugappan</h4>
+                    <h6 class="lg:text-lg md:text-base font-bold">Chairman</h6>
+                    <p class="text-xs lg:text-base md:text-sm leading-5 md:leading-7">
                         Mr. M. M Murugappan, aged 62 yrs. holds a Master’s degree in Chemical Engineering from the University of Michigan, USA. He has held the position of Managing Director of CUMI in the past. Besides serving as the Chairman of CUMI, Tube Investments of India, Cholamandalam MS General Insurance Company Limited, he is on the Boards of several companies including Mahindra & Mahindra, IIT Madras Research Park, Cyient and TI Financial Holdings Limited.
                     </p>
                 </div>
-                <img src="img/chairman.png" alt="chairman" class="w-2/5 -mr-32">
+                <img src="img/chairman.png" alt="chairman" class="w-1/4 sm:w-1/5 md:w-2/5 -mr-32">
             </div>
         </div>
 
